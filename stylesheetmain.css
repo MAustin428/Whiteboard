@@ -90,6 +90,26 @@ position: absolute;
 width: 40%;
 }
 
+#currently {
+left: 80%;
+margin-top: 10%;
+position: absolute;
+}
+
+#currently ul {
+font-variant: small-caps;
+list-style: none;
+letter-spacing: 1px;
+}
+
+#currently li {
+border-bottom: 3px solid black;
+border-right: 3px solid black;
+border-bottom-right-radius: 10px;
+display: inline;
+padding: 8px;
+}
+
 /*END CSS FOR MAIN PAGE*/
 
 /*START OF CSS FOR ALBUM PAGE*/
