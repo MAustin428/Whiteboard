@@ -1,0 +1,168 @@
+/* Designed and coded by Michael Austin. All photography by Michael Austin, 
+except 9.jpg and the ones he appears in (Slideshow photographs 2, 5, 6, 9, 11, 12, 13, 14).
+Loading page picture drawn by Ross Tyger, medium: dry erase marker on whiteboard. Additional 
+artwork by Blair Porterfield and Megan Sulewski. */
+
+
+
+/* UNIVERSAL FORMATTING */
+
+body {
+color: #000000;
+font-family: Geneva, sans-serif;
+font-size: 24px;
+}
+
+a {
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+#contactInfo {
+border-bottom: 2px solid black;
+border-left: 2px solid black;
+border-bottom-left-radius: 10px;
+float: right;
+font-size: 14px;
+padding-left: 20px;
+padding-right: 10px;
+position: relative;
+top: 10px;
+width: 160px;
+}
+
+#contactInfo ul {
+display: inline;
+font-variant: small-caps;
+list-style: none;
+}
+#contactInfo li {
+font-size: 14px;
+line-height: 1.5;
+}
+#contactEmail {
+font-weight: 600;
+}
+
+#contactEmail:hover {
+font-size: 14px;
+font-weight: 600;
+}
+
+.img {
+width: inherit;
+}
+
+#topLinks {
+float: left;
+padding-left: 10px;
+padding-top: 10px;
+position: relative;
+z-index: 1;
+}
+
+#topLinks ul {
+font-variant: small-caps;
+list-style: none;
+letter-spacing: 1px;
+}
+
+#topLinks li {
+border-bottom: 3px solid black;
+border-right: 3px solid black;
+border-bottom-right-radius: 10px;
+display: inline;
+padding: 8px;
+}
+/* END UNIVERSAL FORMATTING */
+
+/*START OF CSS FOR MAIN PAGE*/
+
+#introPic { /*Holds all elements and centers them on the page*/
+left: 40%;
+margin-top: 10%;
+position: absolute;
+width: 40%;
+}
+
+/*END CSS FOR MAIN PAGE*/
+
+/*START OF CSS FOR ALBUM PAGE*/
+
+#highFidelity { /*Album table div*/
+left:50%;
+margin-bottom: 100px;
+margin-left: -512px;
+margin-top: 100px;
+position: absolute;
+width: 1024px;
+}
+
+.librarian {/*Organizational div. Holds album art, as well as information that displays on hover*/
+color: #ffffff;
+height: 200px;
+position: relative;
+width: 200px;
+}
+
+
+.librarian:hover {
+border: 4px solid #000000;
+border-radius: 10px;
+background-color: #ffffff;
+color: #000000;
+float: right;
+height: 500px;
+margin: -104px;
+margin-bottom: -204px;
+width: 400px;
+z-index: 1;
+}
+
+
+.waxFacts {/*Album, artist, release date pop-out*/
+max-width: 100%;
+position: relative;
+margin: 0px;
+text-align: center;
+}
+
+.album {
+float: left;
+max-height: 100%;
+max-width: 100%;
+position: relative;
+}
+
+.album:hover {
+max-height: 100%;
+max-width: 100%;
+z-index: 1;
+}
+
+/*END OF CSS FOR ALBUM PAGE*/
+
+/*START CSS FOR PANORAMA PAGE*/
+
+#panoramaInstructions {
+position: relative;
+padding-left: 60px;
+padding: 30px;
+}
+
+#panoramaHolder {/*contains living room picture. Size is modified on this element; the picture resizes to match*/
+left:0;
+position: absolute;
+width: 100%;
+}
+
+#panorama{
+width: inherit;
+}
+
+/*END OF CSS FOR PANORAMA PAGE*/

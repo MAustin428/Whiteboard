@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang=en>
+	<head>
+		<title>Her Life Was Saved by Rock and Roll</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,user-scalable=yes"/>
+		<link rel="stylesheet" type="text/css" href="stylesheetmain.css"/>
+	</head>
+<!------BODY--------------------------------------------------------------------->
+<body onload="tableSetter()">
+<header>
+<script type="text/javascript">
+/*JS CODE*/
+function lp(title, artist, releaseDate, albumSrc){
+	this.title = title;
+	this.artist = artist;
+	this.releaseDate = releaseDate;
+	this.albumSrc = albumSrc;
+};
+
+var AfterTheGoldRush = new lp("After the Gold Rush", "Neil Young", 1970, "BigAfterTheGoldRush.jpg"); 
+var AgentsOfFortune = new lp("Agents of Fortune", "Blue Oyster Cult", 1976, "BigAgentsOfFortune.jpg"); 
+var Aja = new lp("Aja", "Steely Dan", 1977, "BigAja.jpg"); 
+var AladdinSane = new lp("Aladdin Sane", "David Bowie", 1973, "BigAladdinSane.jpg"); 
+var ANightAtTheOpera = new lp("A Night at the Opera", "Queen", 1975, "BigANightAtTheOpera.jpg"); 
+var AtFolsomPrison = new lp("At Folsom Prison", "Johnny Cash", 1968, "BigAtFolsomPrison.jpg"); 
+var AtSanQuentin = new lp("At San Quentin", "Johnny Cash", 1969, "BigAtSanQuentin.jpg"); 
+var Autobahn = new lp("Autobahn", "Kraftwerk", 1974, "BigAutobahn.jpg"); 
+var AWizardATrueStar = new lp("A Wizard, A True Star", "Todd Rundgren", 1973, "BigAWizardATrueStar.jpg"); 
+var BadReputation = new lp("Bad Reputation", "Joan Jett", 1980, "BigBadReputation.jpg"); 
+var Boston = new lp("Boston", "Boston", 1976, "BigBoston.jpg"); 
+var CityOfNewOrleans = new lp("City of New Orleans", "Willie Nelson", 1984, "BigCityOfNewOrleans.jpg"); 
+var Columbia = new lp("Columbia", "NASA", 1982, "BigColumbia.jpg"); 
+var CountdownToEcstasy = new lp("Countdown To Ecstasy", "Steely Dan", 1973, "BigCountdownToEcstasy.jpg"); 
+var DamnTheTorpedoes = new lp("Damn the Torpedoes", "Tom Petty and the Heartbreakers", 1979, "BigDamnTheTorpedoes.jpg"); 
+var Desire = new lp("Desire", "Bob Dylan", 1976, "BigDesire.jpg"); 
+var Desperado = new lp("Desperado", "The Eagles", 1973, "BigDesperado.jpg"); 
+var DontLookBack = new lp("Don't Look Back", "Boston", 1978, "BigDontLookBack.jpg"); 
+var DreamboatAnnie = new lp("Dreamboat Annie", "Heart", 1976, "BigDreamboatAnnie.jpg"); 
+var EndlessSummer = new lp("Endless Summer", "The Beach Boys", 1974, "BigEndlessSummer.jpg"); 
+var EverybodyKnowsThisIsNowhere = new lp("Everybody Knows This Is Nowhere", "Neil Young with Crazy Horse", 1969, "BigEverybodyKnowsThisIsNowhere.jpg"); 
+var Fragile = new lp("Fragile", "Yes", 1971, "BigFragile.jpg"); 
+var GotToBeThere = new lp("Got to Be There", "Michael Jackson", 1972, "BigGotToBeThere.jpg"); 
+var GreatestHits = new lp("Greatest Hits", "Steely Dan", 1978, "BigGreatestHits.jpg"); 
+var Hemispheres = new lp("Hemispheres", "Rush", 1978, "BigHemispheres.jpg"); 
+var InTheCourtOfTheCrimsonKing = new lp("In the Court of the Crimson King", "King Crimson", 1969, "BigInTheCourtOfTheCrimsonKing.jpg"); 
+var LAWoman = new lp("L.A. Woman", "The Doors", 1971, "BigLAWoman.jpg"); 
+var LedZeppelinIV = new lp("Led Zeppelin IV", "Led Zeppelin", 1971, "BigLedZeppelinIV.jpg"); 
+var LifeAndTimes = new lp("Life And Times", "Jim Croce", 1973, "BigLifeAndTimes.jpg"); 
+var Messiah = new lp("Messiah", "George Frideric Handel", 1983, "BigMessiah.jpg"); 
+var MovingPictures = new lp("Moving Pictures", "Rush", 1981, "BigMovingPictures.jpg"); 
+var MrSpocksMusicFromOuterSpace = new lp("Mr Spock's Music From Outer Space", "Leonard Nimoy", 1967, "BigMrSpocksMusicFromOuterSpace.jpg"); 
+var NoDiggity = new lp("No Diggity", "Blackstreet", 1996, "BigNoDiggity.jpg"); 
+var Pearl = new lp("Pearl", "Janis Joplin", 1971, "BigPearl.jpg"); 
+var PermanentWaves = new lp("Permanent Waves", "Rush", 1980, "BigPermanentWaves.jpg"); 
+var PicturesAtAnExhibition = new lp("Pictures at an Exhibition", "Modest Mussorgsky", 1968, "BigPicturesAtAnExhibition.jpg"); 
+var PiecesOfEight = new lp("Pieces of Eight", "Styx", 1978, "BigPiecesOfEight.jpg"); 
+var Siren = new lp("Siren", "Roxy Music", 1975, "BigSiren.jpg"); 
+var SmashHits = new lp("Smash Hits", "Jimi Hendrix Experience", 1968, "BigSmashHits.jpg"); 
+var SomethingAnything = new lp("Something/ Anything?", "Todd Rundgren", 1972, "BigSomethingAnything.jpg"); 
+var SpaceOddity = new lp("Space Oddity", "David Bowie", 1972, "BigSpaceOddity.jpg"); 
+var SpeakAndSpell = new lp("Speak & Spell", "Depeche Mode", 1981, "BigSpeakAndSpell.jpg"); 
+var SurrealisticPillow = new lp("Surrealistic Pillow", "Jefferson Aeroplane", 1967, "BigSurrealisticPillow.jpg"); 
+var SymphonyNo5 = new lp("Symphony No. 5", "Dimitri Shostakovich", 1958, "BigSymphonyNo5.jpg"); 
+var Tarkus = new lp("Tarkus", "Emerson, Lake, & Palmer", 1971, "BigTarkus.jpg"); 
+var TheBestOfMuddyWaters = new lp("The Best of Muddy Waters", "Muddy Waters", 1958, "BigTheBestOfMuddyWaters.jpg"); 
+var TheCreation = new lp("The Creation", "Joseph Haydn", 1975, "BigTheCreation.jpg"); 
+var TheDarkSideOfTheMoon = new lp("The Dark Side of the Moon", "Pink Floyd", 1973, "BigTheDarkSideOfTheMoon.jpg"); 
+var TheEmpireStrikesBackSoundtrack = new lp("The Empire Strikes Back Soundtrack", "John Williams", 1980, "BigTheEmpireStrikesBackSoundtrack.jpg"); 
+var TheGrandIllusion = new lp("The Grand Illusion", "Styx", 1977, "BigTheGrandIllusion.jpg"); 
+var TheNumberOfTheBeast = new lp("The Number of the Beast", "Iron Maiden", 1982, "BigTheNumberOfTheBeast.jpg"); 
+var ThePlanets = new lp("The Planets", "Gustav Holst", 1976, "BigThePlanets.jpg"); 
+var TheRevolutionWillNotBeTelevised = new lp("The Revolution Will Not Be Televised", "Gil Scott-Heron", 1974, "BigTheRevolutionWillNotBeTelevised.jpg"); 
+var TheRiseAndFallOfZiggyStardustAndTheSpidersFromMars = new lp("The Rise and Fall of Ziggy Stardust and the Spiders from Mars", "David Bowie", 1972, "BigTheRiseAndFallOfZiggyStardustAndTheSpidersFromMars.jpg"); 
+var TheWall = new lp("The Wall", "Pink Floyd", 1979, "BigTheWall.jpg"); 
+var TheYardbirdsGreatestHits = new lp("The Yardbirds Greatest Hits", "The Yardbirds", 1977, "BigTheYardbirdsGreatestHits.jpg"); 
+var TheYesAlbum = new lp("The Yes Album", "Yes", 1971, "BigTheYesAlbum.jpg"); 
+var Thriller = new lp("Thriller", "Michael Jackson", 1982, "BigThriller.jpg"); 
+var WhosNext = new lp("Who's Next", "The Who", 1971, "BigWhosNext.jpg"); 
+var YouDontMessAroundwithJim = new lp("You Don't Mess Around with Jim", "Jim Croce", 1972, "BigYouDontMessAroundwithJim.jpg");
+
+var lpArray = [AfterTheGoldRush, AgentsOfFortune, Aja, AladdinSane, ANightAtTheOpera, AtFolsomPrison, AtSanQuentin, Autobahn, AWizardATrueStar, BadReputation, Boston, CityOfNewOrleans, Columbia, CountdownToEcstasy, DamnTheTorpedoes, Desire, Desperado, DontLookBack, DreamboatAnnie, EndlessSummer, EverybodyKnowsThisIsNowhere, Fragile, GotToBeThere, GreatestHits, Hemispheres, InTheCourtOfTheCrimsonKing, LAWoman, LedZeppelinIV, LifeAndTimes, Messiah, MovingPictures, MrSpocksMusicFromOuterSpace, NoDiggity, Pearl, PermanentWaves, PicturesAtAnExhibition, PiecesOfEight, Siren, SmashHits, SomethingAnything, SpaceOddity, SpeakAndSpell, SurrealisticPillow, SymphonyNo5, Tarkus, TheBestOfMuddyWaters, TheCreation, TheDarkSideOfTheMoon, TheEmpireStrikesBackSoundtrack, TheGrandIllusion, TheNumberOfTheBeast, ThePlanets, TheRevolutionWillNotBeTelevised, TheRiseAndFallOfZiggyStardustAndTheSpidersFromMars, TheWall, TheYardbirdsGreatestHits, TheYesAlbum, Thriller, WhosNext, YouDontMessAroundwithJim];
+
+function tableSetter()/*fork on the left; knife on the right!*/{
+	var numberOfColumns = 5; /*Controls number of images per row. Manually set for consistency. (screen.width/librarian.width) can be used for a variable-width tables*/
+	var currentAlbumCounter = 0;
+    var albumCarpenter = document.createElement("table");
+	albumCarpenter.id=("albumTable");
+	document.getElementById("highFidelity").appendChild(albumCarpenter);
+	
+	/*Auto-populates new rows if more elements are added*/
+	for (j=0;  j<lpArray.length/numberOfColumns; j++) {
+	var albumCrew = document.createElement("tr");
+	albumCrew.id=("Row"+j);
+	document.getElementById("albumTable").appendChild(albumCrew);
+	
+		/*Creates cells and fills them with a div that keeps everything organized*/
+		for (i=0; i<numberOfColumns; i++) {
+			var albumWarden = document.createElement ("td");
+			var albumLibrarian = document.createElement ("div");
+			albumLibrarian.id=("lib" + currentAlbumCounter);
+			albumLibrarian.className="librarian";
+		
+			/*Reads an album title from the array, and assigns the proper picture to it*/
+			var albumNode = document.createElement ("img");
+			albumNode.id=("pic" + currentAlbumCounter);
+			albumNode.setAttribute("src", "Albums/"+lpArray[currentAlbumCounter].albumSrc);
+			albumNode.className="album";
+			albumLibrarian.appendChild(albumNode);
+	
+			/*Attaches album info to appropriate container, and moves on to the next album*/
+			var albumFacts=document.createElement("p");
+			albumFacts.id=currentAlbumCounter;
+			albumFacts.className="waxFacts";
+			albumFacts.innerHTML=(lpArray[currentAlbumCounter].title+" <br> "+lpArray[currentAlbumCounter].artist+" || "+lpArray[currentAlbumCounter].releaseDate);
+			albumLibrarian.appendChild(albumFacts);
+			albumWarden.appendChild(albumLibrarian);
+			document.getElementById("Row"+j).appendChild(albumWarden);
+			currentAlbumCounter++;
+		}
+	}
+}
+
+</script>
+
+
+	<div id="topLinks">
+		<ul>
+			<li><a href="Main.html">Home</a></li>
+			<li><a href="Albums.html">Albums</a></li>
+			<li><a href="Panorama.html">Look Around You</a></li>
+		</ul>
+	</div>
+</header>
+
+
+<!--Table goes here: created by js-->
+<div id="highFidelity"></div>
+
+</body>
+</html>
